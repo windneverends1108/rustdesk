@@ -28,6 +28,7 @@ TIMEOUT = float(os.getenv("TIMEOUT") or "900")
 
 
 def create(task_name, file_path=None):
+    print(file_path)
     if file_path is None:
         response = requests.post(
             f"{BASE_URL}/tasks/{task_name}", timeout=TIMEOUT, headers=HEADERS
