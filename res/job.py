@@ -296,8 +296,8 @@ def main():
 
     if args.command == "sign_one_file":
         sign_one_file(args.file_path)
-    elif args.command == "sign_files":
-        sign_files(args.dir_path, args.only_ext)
+    #elif args.command == "sign_files":
+      #  sign_files(args.dir_path, args.only_ext)
     elif args.command == "fetch":
         print(fetch())
     elif args.command == "update_status":
